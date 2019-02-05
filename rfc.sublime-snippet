@@ -1,0 +1,15 @@
+<!-- react functional component -->
+<snippet>
+    <content><![CDATA[
+import React from 'react';
+
+const ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} = (${2}) => (
+    ${3:<div></div>}
+);
+
+export default ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}};
+]]></content>
+    <tabTrigger>rfc</tabTrigger>
+    <scope>source.js</scope>
+    <description>react functional component</description>
+</snippet>
