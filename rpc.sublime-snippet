@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+    render() {
+        return (
+            ${2:<div>${0}</div>}
+        );
+    }
+}
+
+${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}.propTypes = {
+    
+};
+
+export default ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}};
+]]></content>
+    <tabTrigger>rpc</tabTrigger>
+    <scope>source.js</scope>
+    <description>react pure component</description>
+</snippet>
